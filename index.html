@@ -1,2 +1,215 @@
-<h1>Hello, world!</h1>
-<p>Welcome to my GitHub Page.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keshav Agarwal — Personal Site</title>
+  <meta name="description" content="Keshav Agarwal — MBA Candidate at UNC Kenan‑Flagler. Interests: Investment Banking, M&A, technology, and building useful things." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Keshav Agarwal — Personal Site" />
+  <meta property="og:description" content="MBA Candidate at UNC Kenan‑Flagler. Interests: Investment Banking, M&A, technology, and building useful things." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN" />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (add your own file at /favicon.svg or /favicon.ico) -->
+  <link rel="icon" href="/favicon.svg" />
+
+  <!-- Schema.org Person markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Keshav Agarwal",
+    "url": "https://YOUR-DOMAIN",
+    "jobTitle": "MBA Candidate",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "UNC Kenan-Flagler"},
+    "sameAs": [
+      "https://www.linkedin.com/in/keshavagarwalcfa",
+      "https://github.com/YOUR-GITHUB-USERNAME"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --bg-soft: #11131a;
+      --text: #eaeaf0;
+      --muted: #9aa3b2;
+      --brand: #4f8cff;
+      --brand-contrast: #0f1a2e;
+      --card: #0f141b;
+      --border: #1f2937;
+      --shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f6f8fb;
+        --text: #0e1116;
+        --muted: #475569;
+        --brand: #3b82f6;
+        --brand-contrast: #eaf2ff;
+        --card: #ffffff;
+        --border: #e5e7eb;
+        --shadow: 0 10px 30px rgba(2,6,23,0.06);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1000px 600px at 80% -10%, rgba(79,140,255,0.12), transparent), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .btn { display: inline-block; padding: 10px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--brand-contrast); color: var(--brand); font-weight: 600; text-decoration: none; box-shadow: var(--shadow); }
+    .btn:hover { filter: brightness(1.05); text-decoration: none; }
+    .btn.primary { background: var(--brand); color: white; border-color: transparent; }
+    .btn-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(8px); background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; }
+    .nav { display:flex; align-items:center; justify-content: space-between; }
+    .nav a { margin-left: 16px; color: var(--muted); }
+    .nav a.active, .nav a:hover { color: var(--text); }
+
+    .hero { display: grid; gap: 24px; grid-template-columns: 1fr; padding: 48px 0; }
+    .tag { display:inline-flex; align-items:center; gap:8px; background: var(--bg-soft); color: var(--muted); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size: 14px; }
+    .name { font-size: clamp(28px, 6vw, 44px); line-height: 1.15; margin: 8px 0 0; }
+    .subtitle { font-size: clamp(16px, 2.6vw, 18px); color: var(--muted); margin: 6px 0 0; }
+
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 4px 0 8px; font-size: 18px; }
+    .meta { font-size: 14px; color: var(--muted); }
+
+    section { padding: 28px 0; }
+    section h2 { font-size: 22px; margin: 0 0 12px; }
+
+    footer { border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px; color: var(--muted); }
+
+    /* Accessibility */
+    .skip-link { position: absolute; left: -9999px; }
+    .skip-link:focus { left: 16px; top: 16px; background: var(--brand); color: #fff; padding: 8px 12px; border-radius: 8px; z-index: 999; }
+  </style>
+</head>
+<body>
+  <a href="#content" class="skip-link">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <div><strong>Keshav</strong></div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section class="hero" aria-label="Intro">
+      <div>
+        <span class="tag">📍 Chapel Hill · UNC Kenan‑Flagler</span>
+        <h1 class="name">Keshav Agarwal</h1>
+        <p class="subtitle">MBA Candidate (Class of 2027). Ex‑family business → product engineering (ZapCom). Breaking into <strong>Investment Banking / M&A</strong> with a focus on Industrials & technology‑driven business models.</p>
+        <div class="btn-row" style="margin-top: 14px;">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="/resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+          <a class="btn" href="mailto:keshav_agarwal@kenan-flagler.unc.edu">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I grew up in Hyderabad and Haryana, ran parts of a traditional steel distribution business, then moved into tech consulting and product engineering at ZapCom. I enjoy building simple tools, clean processes, and clear narratives. This site is my living notebook of work and learning.
+      </p>
+      <p class="meta">Last update: <time datetime="2025-09-16">September 16, 2025</time></p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>UNC Kenan‑Flagler — MBA Candidate</h3>
+          <p class="meta">2025–2027 · Chapel Hill, NC</p>
+          <p>Investment Banking focus; projects in M&A modeling, competitive strategy, and AI in operations. President‑track involvement in the Investment Banking Club.</p>
+        </article>
+        <article class="card">
+          <h3>Bharat Tubes — Strategy & Treasury</h3>
+          <p class="meta">2019–2024 · India</p>
+          <p>Optimized working capital and vendor contracts; redeployed treasury to high‑conviction equities and freed up capital with inventory timing changes.</p>
+        </article>
+        <article class="card">
+          <h3>ZapCom — Product & Biz Dev (Intern)</h3>
+          <p class="meta">2025 · Hyderabad / Remote</p>
+          <p>Built B2B pipeline, created ops tooling, and worked on AI‑assisted sales enablement prototypes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Deal teardown: Industrial roll‑ups</h3>
+          <p class="meta">Finance · M&A · Case notes</p>
+          <p>Structured comparative analysis of PE roll‑ups in specialty manufacturing; revenue synergies vs. procurement savings.</p>
+          <p><a href="#">Read notes →</a></p>
+        </article>
+        <article class="card">
+          <h3>ABM toolkit for early‑stage SaaS</h3>
+          <p class="meta">Go‑to‑market · GTM ops</p>
+          <p>Repeatable playbook + lightweight spreadsheet for ICP mapping, email copy, and meeting conversion tracking.</p>
+          <p><a href="#">See repo →</a></p>
+        </article>
+        <article class="card">
+          <h3>IndiGo cargo: Load‑planning concept</h3>
+          <p class="meta">Ops · Digital twin</p>
+          <p>Concept note on using 3D scanning + AI to cut turn‑around times; quick math on ROI and ramp utilization.</p>
+          <p><a href="#">Slides →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing">
+      <h2>Writing</h2>
+      <ul>
+        <li><a href="#">How I explain enterprise software to my non‑tech friends</a> <span class="meta">· Notes</span></li>
+        <li><a href="#">What actually moves the middle of a deal funnel</a> <span class="meta">· Essay</span></li>
+        <li><a href="#">On picking an industry: signals from conversations</a> <span class="meta">· Journal</span></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Best way to reach me is email. I’m also on <a href="https://www.linkedin.com/in/keshavagarwalcfa" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub</a>.</p>
+      <div class="btn-row">
+        <a class="btn primary" href="mailto:keshav_agarwal@kenan-flagler.unc.edu">Say hello</a>
+        <a class="btn" href="https://calendar.google.com/" target="_blank" rel="noopener">Book time</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Keshav Agarwal. All rights reserved. · <a href="/rss.xml">RSS</a></p>
+    </footer>
+  </main>
+
+  <script>
+    // Update year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
