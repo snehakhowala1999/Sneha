@@ -1,214 +1,486 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Keshav Agarwal — Personal Site</title>
-  <meta name="description" content="Keshav Agarwal — MBA Candidate at UNC Kenan‑Flagler. Interests: Investment Banking, M&A, technology, and building useful things." />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Keshav Agarwal — Personal Site" />
-  <meta property="og:description" content="MBA Candidate at UNC Kenan‑Flagler. Interests: Investment Banking, M&A, technology, and building useful things." />
+  <title>Sneha Khowala — Profile</title>
+  <meta name="description" content="Sneha Khowala — Aviation & Logistics leader with 44 months of experience across India & Vietnam. Business Development, Operations Excellence, Partnerships." />
+  <meta property="og:title" content="Sneha Khowala — Profile" />
+  <meta property="og:description" content="Aviation & Logistics | Business Development | Operations Excellence" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://YOUR-DOMAIN" />
-  <meta property="og:image" content="/assets/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Favicon (add your own file at /favicon.svg or /favicon.ico) -->
-  <link rel="icon" href="/favicon.svg" />
-
-  <!-- Schema.org Person markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Keshav Agarwal",
-    "url": "https://YOUR-DOMAIN",
-    "jobTitle": "MBA Candidate",
-    "affiliation": {"@type": "CollegeOrUniversity", "name": "UNC Kenan-Flagler"},
-    "sameAs": [
-      "https://www.linkedin.com/in/keshavagarwalcfa",
-      "https://github.com/YOUR-GITHUB-USERNAME"
-    ]
-  }
-  </script>
-
+  <meta name="theme-color" content="#111827" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #0b0c0f;
-      --bg-soft: #11131a;
-      --text: #eaeaf0;
-      --muted: #9aa3b2;
-      --brand: #4f8cff;
-      --brand-contrast: #0f1a2e;
-      --card: #0f141b;
-      --border: #1f2937;
-      --shadow: 0 10px 30px rgba(0,0,0,0.25);
+    :root{
+      --bg:#0b0f17;         /* slate-950 */
+      --panel:#0f172a;      /* slate-900 */
+      --card:#111827;       /* gray-900 */
+      --muted:#94a3b8;      /* slate-400 */
+      --text:#e5e7eb;       /* gray-200 */
+      --brand:#60a5fa;      /* blue-400 */
+      --brand-2:#a78bfa;    /* violet-400 */
+      --ring: rgba(96,165,250,.35);
+      --ok:#22c55e; --warn:#f59e0b; --danger:#ef4444;
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --bg-soft: #f6f8fb;
-        --text: #0e1116;
-        --muted: #475569;
-        --brand: #3b82f6;
-        --brand-contrast: #eaf2ff;
-        --card: #ffffff;
-        --border: #e5e7eb;
-        --shadow: 0 10px 30px rgba(2,6,23,0.06);
-      }
+    :root.light{
+      --bg:#f8fafc;         /* slate-50 */
+      --panel:#ffffff;      /* white */
+      --card:#ffffff;
+      --muted:#475569;      /* slate-600 */
+      --text:#0f172a;       /* slate-900 */
+      --brand:#2563eb;      /* blue-600 */
+      --brand-2:#7c3aed;    /* violet-600 */
+      --ring: rgba(37,99,235,.25);
     }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(1000px 600px at 80% -10%, rgba(79,140,255,0.12), transparent), var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    html,body{height:100%}
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,.12), transparent),
+                  radial-gradient(1000px 520px at 90% -20%, rgba(167,139,250,.10), transparent), var(--bg);
+      color:var(--text); line-height:1.6;
     }
-    .container { max-width: 1000px; margin: 0 auto; padding: 24px; }
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .btn { display: inline-block; padding: 10px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--brand-contrast); color: var(--brand); font-weight: 600; text-decoration: none; box-shadow: var(--shadow); }
-    .btn:hover { filter: brightness(1.05); text-decoration: none; }
-    .btn.primary { background: var(--brand); color: white; border-color: transparent; }
-    .btn-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:100%; max-width:1100px; margin:0 auto; padding:0 20px}
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:40; backdrop-filter: blur(8px);
+      background:linear-gradient(to bottom, rgba(11,15,23,.9), rgba(11,15,23,.65));
+      border-bottom:1px solid rgba(148,163,184,.15);
+    }
+    :root.light header{background:linear-gradient(to bottom, rgba(255,255,255,.95), rgba(255,255,255,.72));}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:12px 0}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700}
+    .dot{width:12px; height:12px; border-radius:999px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow:0 0 0 4px var(--ring)}
+    nav a{margin:0 10px; padding:8px 10px; border-radius:10px}
+    nav a.active{background:linear-gradient(135deg, rgba(96,165,250,.15), rgba(167,139,250,.15));}
+    .actions{display:flex; align-items:center; gap:10px}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid rgba(148,163,184,.25); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); color:var(--text); font-weight:600; cursor:pointer}
+    .btn:hover{box-shadow:0 4px 18px rgba(0,0,0,.2)}
+    .btn.ghost{background:transparent}
+    .btn.primary{background:linear-gradient(135deg, var(--brand), var(--brand-2)); border:none; color:#fff}
 
-    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(8px); background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; }
-    .nav { display:flex; align-items:center; justify-content: space-between; }
-    .nav a { margin-left: 16px; color: var(--muted); }
-    .nav a.active, .nav a:hover { color: var(--text); }
+    /* Hero */
+    .hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; padding:40px 0 10px}
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr; gap:14px; padding:26px 0 0}}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(148,163,184,.18); border-radius:18px; padding:22px}
+    :root.light .card{background:#fff}
+    .headline{font-size:40px; line-height:1.15; margin:0 0 10px}
+    .sub{color:var(--muted); margin:0 0 18px}
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0}
+    .chip{padding:6px 10px; border-radius:999px; border:1px solid rgba(148,163,184,.25); font-size:13px; color:var(--muted)}
 
-    .hero { display: grid; gap: 24px; grid-template-columns: 1fr; padding: 48px 0; }
-    .tag { display:inline-flex; align-items:center; gap:8px; background: var(--bg-soft); color: var(--muted); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size: 14px; }
-    .name { font-size: clamp(28px, 6vw, 44px); line-height: 1.15; margin: 8px 0 0; }
-    .subtitle { font-size: clamp(16px, 2.6vw, 18px); color: var(--muted); margin: 6px 0 0; }
+    /* Quick stats */
+    .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:8px}
+    @media (max-width: 900px){ .stats{grid-template-columns:repeat(2,1fr)} }
+    .stat{padding:18px; border-radius:16px; border:1px dashed rgba(148,163,184,.25); background:linear-gradient(180deg, rgba(96,165,250,.07), rgba(167,139,250,.07))}
+    .stat .n{font-size:26px; font-weight:800}
+    .muted{color:var(--muted)}
 
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
-    .card h3 { margin: 4px 0 8px; font-size: 18px; }
-    .meta { font-size: 14px; color: var(--muted); }
+    /* Sections */
+    section{padding:30px 0}
+    h2{font-size:24px; margin:0 0 14px}
 
-    section { padding: 28px 0; }
-    section h2 { font-size: 22px; margin: 0 0 12px; }
+    /* Experience */
+    .toolbar{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:12px}
+    .search{flex:1; min-width:240px; background:var(--panel); border:1px solid rgba(148,163,184,.25); border-radius:12px; padding:10px 12px; color:var(--text)}
+    :root.light .search{background:#fff}
+    .filters{display:flex; flex-wrap:wrap; gap:8px}
+    .filter{padding:6px 10px; border-radius:999px; border:1px solid rgba(148,163,184,.25); cursor:pointer}
+    .filter.active{background:linear-gradient(135deg, rgba(96,165,250,.2), rgba(167,139,250,.2));}
 
-    footer { border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px; color: var(--muted); }
+    .xp-grid{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+    @media (max-width: 900px){ .xp-grid{grid-template-columns:1fr}}
+    .xp{position:relative}
+    .xp h3{margin:0 0 6px; font-size:18px}
+    .role{color:var(--muted); font-weight:600; margin-bottom:10px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 0}
+    .tag{font-size:12px; padding:4px 8px; border-radius:999px; border:1px solid rgba(148,163,184,.25); color:var(--muted)}
+    .bullets{margin:8px 0 0 0; padding-left:18px}
+    .bullets li{margin:6px 0}
+    details summary{list-style:none; cursor:pointer}
+    details summary::-webkit-details-marker{display:none}
+    details[open] .chev{transform:rotate(180deg)}
+    .chev{transition:transform .2s ease}
 
-    /* Accessibility */
-    .skip-link { position: absolute; left: -9999px; }
-    .skip-link:focus { left: 16px; top: 16px; background: var(--brand); color: #fff; padding: 8px 12px; border-radius: 8px; z-index: 999; }
+    /* Education & list */
+    .list{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+    @media (max-width: 900px){ .list{grid-template-columns:1fr}}
+
+    /* Footer */
+    footer{padding:30px 0 60px; color:var(--muted)}
+
+    /* Animations */
+    .fade{opacity:0; transform: translateY(8px); transition: opacity .4s ease, transform .4s ease}
+    .fade.show{opacity:1; transform:none}
   </style>
 </head>
 <body>
-  <a href="#content" class="skip-link">Skip to content</a>
   <header>
     <div class="container nav">
-      <div><strong>Keshav</strong></div>
-      <nav aria-label="Primary">
+      <div class="brand"><span class="dot"></span> <span>Sneha Khowala</span></div>
+      <nav aria-label="Sections">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
+        <a href="#leadership">Leadership</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="actions">
+        <button class="btn ghost" id="themeBtn" aria-label="Toggle color theme">🌓</button>
+        <button class="btn" id="printBtn" title="Save as PDF">🖨️ Save</button>
+        <a class="btn primary" href="#contact">Let’s Connect</a>
+      </div>
     </div>
   </header>
 
-  <main id="content" class="container">
-    <section class="hero" aria-label="Intro">
-      <div>
-        <span class="tag">📍 Chapel Hill · UNC Kenan‑Flagler</span>
-        <h1 class="name">Keshav Agarwal</h1>
-        <p class="subtitle">MBA Candidate (Class of 2027). Ex‑family business → product engineering (ZapCom). Breaking into <strong>Investment Banking / M&A</strong> with a focus on Industrials & technology‑driven business models.</p>
-        <div class="btn-row" style="margin-top: 14px;">
-          <a class="btn primary" href="#projects">View projects</a>
-          <a class="btn" href="/resume.pdf" target="_blank" rel="noopener">Download résumé</a>
-          <a class="btn" href="mailto:keshav_agarwal@kenan-flagler.unc.edu">Email me</a>
+  <main class="container">
+    <!-- Hero -->
+    <section id="about" class="hero fade">
+      <div class="card">
+        <h1 class="headline">Hi, I’m <span style="background:linear-gradient(135deg, var(--brand), var(--brand-2)); -webkit-background-clip:text; background-clip:text; color:transparent">Sneha Khowala</span></h1>
+        <p class="sub">Aviation & Logistics | Business Development | Operations Excellence</p>
+        <div class="chips">
+          <span class="chip">India ↔ Vietnam</span>
+          <span class="chip">Air Cargo</span>
+          <span class="chip">Go-to-market</span>
+          <span class="chip">Scheduling & Capacity</span>
+          <span class="chip">Partnerships</span>
+        </div>
+        <div class="actions" style="margin:10px 0 6px">
+          <a class="btn" href="mailto:snehakhowala1999@gmail.com">✉️ Email</a>
+          <button class="btn" id="copyEmail">📋 Copy Email</button>
+          <a class="btn ghost" href="tel:+919030342050">📞 Call</a>
+          <a class="btn primary" href="Sneha_Khowala_Resume.pdf" download>⬇️ Resume (PDF)</a>
+          <button class="btn ghost" id="shareBtn">🔗 Share</button>
+        </div>
+        <p class="muted" style="margin-top:6px">Open to roles in cargo, airline commercial, and logistics strategy.</p>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0">Quick Stats</h2>
+        <div class="stats">
+          <div class="stat"><div class="n" data-count="44">0</div><div class="muted">Months Experience</div></div>
+          <div class="stat"><div class="n" data-count="8.5" data-suffix="M">0</div><div class="muted">USD Revenue Led</div></div>
+          <div class="stat"><div class="n" data-count="100" data-plus="+">0</div><div class="muted">GCCs Mapped</div></div>
+          <div class="stat"><div class="n" data-count="96.4" data-suffix="%">0</div><div class="muted">Class XII Score</div></div>
+        </div>
+        <div class="chips" style="margin-top:14px">
+          <span class="chip">🔍 Data-driven</span>
+          <span class="chip">🤝 Partner-first</span>
+          <span class="chip">⚙️ Process Optimizer</span>
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I grew up in Hyderabad and Haryana, ran parts of a traditional steel distribution business, then moved into tech consulting and product engineering at ZapCom. I enjoy building simple tools, clean processes, and clear narratives. This site is my living notebook of work and learning.
-      </p>
-      <p class="meta">Last update: <time datetime="2025-09-16">September 16, 2025</time></p>
-    </section>
-
-    <section id="experience">
+    <!-- Experience -->
+    <section id="experience" class="fade">
       <h2>Experience</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>UNC Kenan‑Flagler — MBA Candidate</h3>
-          <p class="meta">2025–2027 · Chapel Hill, NC</p>
-          <p>Investment Banking focus; projects in M&A modeling, competitive strategy, and AI in operations. President‑track involvement in the Investment Banking Club.</p>
+      <div class="toolbar">
+        <input class="search" id="search" placeholder="Search achievements (e.g., \"battery cargo\" or \"cost\")" />
+        <div class="filters" role="group" aria-label="Filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="bizdev">Business Dev</button>
+          <button class="filter" data-filter="ops">Operations</button>
+          <button class="filter" data-filter="lead">Leadership</button>
+          <button class="filter" data-filter="intern">Internships</button>
+        </div>
+      </div>
+
+      <div class="xp-grid" id="xpList">
+        <!-- Country Head -->
+        <article class="card xp" data-tags="bizdev ops lead">
+          <h3>Country Head — Vietnam</h3>
+          <div class="role">MGH Group · Hanoi · Mar 2023 – Apr 2024</div>
+          <details open>
+            <summary><strong>Highlights</strong> <span class="chev">▾</span></summary>
+            <ul class="bullets">
+              <li>Generated ~USD 8.5M by orchestrating collaboration with 7+ carriers & 70+ forwarders.</li>
+              <li>Grew uplift volume by 50% via key account pricing for top 5 clients.</li>
+              <li>Improved profitability per rotation by 25% by targeting high-yield battery cargo (~30% capture).</li>
+              <li>Submitted 4 carrier RFPs to secure representation in India.</li>
+              <li>Cut operational costs by 20% through geo-mapped transport & manpower planning.</li>
+              <li>Raised scheduling accuracy to 85% with weekly market analytics & network intel.</li>
+              <li>Led a 5+ member team; nurtured 50+ vendor & customer relationships.</li>
+            </ul>
+          </details>
+          <div class="tags"><span class="tag">Aviation</span><span class="tag">Biz Dev</span><span class="tag">Ops</span><span class="tag">Leadership</span></div>
         </article>
-        <article class="card">
-          <h3>Bharat Tubes — Strategy & Treasury</h3>
-          <p class="meta">2019–2024 · India</p>
-          <p>Optimized working capital and vendor contracts; redeployed treasury to high‑conviction equities and freed up capital with inventory timing changes.</p>
+
+        <!-- Regional Manager -->
+        <article class="card xp" data-tags="bizdev ops lead">
+          <h3>Regional Manager — North India</h3>
+          <div class="role">MGH Group · Gurugram · Mar 2022 – Feb 2023</div>
+          <details>
+            <summary><strong>Highlights</strong> <span class="chev">▾</span></summary>
+            <ul class="bullets">
+              <li>Drove ~USD 8.2M incremental revenue across four innovation projects.</li>
+              <li>Established an air–air model centered on India, adding ~USD 4M revenue.</li>
+              <li>Added 100 tonnes weekly to USA & Europe routes, opening new gateways.</li>
+              <li>Boosted profitability by 40% through vendor cost negotiations & carrier setup.</li>
+              <li>Trimmed costs by 25% via vendor management & efficiency with Vistara.</li>
+              <li>Protected 15% topline by retaining Myanmar Airways representation through relaunch.</li>
+              <li>Achieved ~90% cargo capacity utilization with demand forecasting & controls.</li>
+              <li>Managed ~30 tonnes weekly, expanding product mix in Europe markets.</li>
+            </ul>
+          </details>
+          <div class="tags"><span class="tag">Aviation</span><span class="tag">Biz Dev</span><span class="tag">Ops</span></div>
         </article>
-        <article class="card">
-          <h3>ZapCom — Product & Biz Dev (Intern)</h3>
-          <p class="meta">2025 · Hyderabad / Remote</p>
-          <p>Built B2B pipeline, created ops tooling, and worked on AI‑assisted sales enablement prototypes.</p>
+
+        <!-- Senior Executive -->
+        <article class="card xp" data-tags="ops">
+          <h3>Senior Executive</h3>
+          <div class="role">MGH Group · Gurugram · Mar 2021 – Feb 2022</div>
+          <details>
+            <summary><strong>Highlights</strong> <span class="chev">▾</span></summary>
+            <ul class="bullets">
+              <li>Reduced issue resolution time from 15 → 6 hours via cross-office coordination.</li>
+              <li>Improved on-time delivery by 60% by optimizing logistics workflows.</li>
+              <li>Coordinated ~80 tonnes/day with internal & external stakeholders.</li>
+              <li>Delivered 85% of plan through manpower planning & forecasting.</li>
+              <li>Maintained topline by taking on additional operational responsibilities.</li>
+              <li>Scouted bids using market trends & partner networks.</li>
+            </ul>
+          </details>
+          <div class="tags"><span class="tag">Ops</span><span class="tag">Logistics</span></div>
+        </article>
+
+        <!-- Management Trainee -->
+        <article class="card xp" data-tags="ops">
+          <h3>Management Trainee</h3>
+          <div class="role">MGH Group · Gurugram · Sep 2020 – Feb 2021</div>
+          <details>
+            <summary><strong>Highlights</strong> <span class="chev">▾</span></summary>
+            <ul class="bullets">
+              <li>Handled 30+ client interactions/day to drive satisfaction & retention.</li>
+              <li>Built competitive representation bids for 10+ airlines across Eurasia.</li>
+              <li>Redesigned sales MIS for 40% faster data integration.</li>
+            </ul>
+          </details>
+          <div class="tags"><span class="tag">Client Success</span><span class="tag">Analytics</span></div>
+        </article>
+
+        <!-- ZapCom Internship -->
+        <article class="card xp" data-tags="intern bizdev">
+          <h3>Associate, Business Development (Intern)</h3>
+          <div class="role">ZapCom · Hyderabad · Apr 2025 – Jun 2025</div>
+          <details>
+            <summary><strong>Highlights</strong> <span class="chev">▾</span></summary>
+            <ul class="bullets">
+              <li>Generated 30+ qualified B2B leads; mapped 100+ GCCs; opened 15+ convos & 3+ warm meetings.</li>
+              <li>Built ~$859K pipeline across LMS & SGG proposals; drove deal progression.</li>
+              <li>Mapped 12+ user touchpoints for a Saudi tourism dashboard; enabled API-led integration.</li>
+              <li>Benchmarked 5+ competitors; recommended entry via alliances & IP commercialization.</li>
+            </ul>
+          </details>
+          <div class="tags"><span class="tag">Tech</span><span class="tag">Biz Dev</span></div>
+        </article>
+
+        <!-- CBRE Internship -->
+        <article class="card xp" data-tags="intern">
+          <h3>Intern — CBRE India</h3>
+          <div class="role">Pune · Feb 2019 – May 2019</div>
+          <details>
+            <summary><strong>Highlights</strong> <span class="chev">▾</span></summary>
+            <ul class="bullets">
+              <li>Ran relocation analysis for 700+ Genpact employees with property analytics & insights.</li>
+              <li>Led brand color perception study via 70 surveys & 12 interviews.</li>
+              <li>Supported merchandising for 100+ field staff to elevate visibility.</li>
+            </ul>
+          </details>
+          <div class="tags"><span class="tag">Real Estate</span><span class="tag">Research</span></div>
+        </article>
+
+        <!-- TFI -->
+        <article class="card xp" data-tags="intern lead">
+          <h3>Volunteer — Teach For India</h3>
+          <div class="role">Pune · Jan 2019 – Feb 2019</div>
+          <details>
+            <summary><strong>Highlights</strong> <span class="chev">▾</span></summary>
+            <ul class="bullets">
+              <li>Delivered lessons on soft skills & hygiene to 100+ students.</li>
+              <li>Enabled differential learning for 7+ specially-abled students.</li>
+              <li>Mentored 60+ students for annual day & TFI MUN participation.</li>
+            </ul>
+          </details>
+          <div class="tags"><span class="tag">Community</span><span class="tag">Leadership</span></div>
         </article>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Deal teardown: Industrial roll‑ups</h3>
-          <p class="meta">Finance · M&A · Case notes</p>
-          <p>Structured comparative analysis of PE roll‑ups in specialty manufacturing; revenue synergies vs. procurement savings.</p>
-          <p><a href="#">Read notes →</a></p>
-        </article>
-        <article class="card">
-          <h3>ABM toolkit for early‑stage SaaS</h3>
-          <p class="meta">Go‑to‑market · GTM ops</p>
-          <p>Repeatable playbook + lightweight spreadsheet for ICP mapping, email copy, and meeting conversion tracking.</p>
-          <p><a href="#">See repo →</a></p>
-        </article>
-        <article class="card">
-          <h3>IndiGo cargo: Load‑planning concept</h3>
-          <p class="meta">Ops · Digital twin</p>
-          <p>Concept note on using 3D scanning + AI to cut turn‑around times; quick math on ROI and ramp utilization.</p>
-          <p><a href="#">Slides →</a></p>
-        </article>
+    <!-- Education -->
+    <section id="education" class="fade">
+      <h2>Education</h2>
+      <div class="list">
+        <div class="card">
+          <h3>MBA, BITS School of Management (BITSoM)</h3>
+          <div class="muted">Mumbai · 2026 (Pursuing)</div>
+        </div>
+        <div class="card">
+          <h3>BBA, Symbiosis Centre for Management Studies</h3>
+          <div class="muted">Pune · 2020 · CGPA 8.59/10 (10/10 in Marketing Communications)</div>
+        </div>
+        <div class="card">
+          <h3>Class XII, CBSE — Sadhu Vaswani Intl. School</h3>
+          <div class="muted">Hyderabad · 2017 · 96.4% (Batch Topper — Academic Excellence)</div>
+        </div>
+        <div class="card">
+          <h3>Class X, CBSE — Sadhu Vaswani Intl. School</h3>
+          <div class="muted">Hyderabad · 2015 · CGPA 9.4/10 (10/10 in English & Hindi)</div>
+        </div>
       </div>
     </section>
 
-        <section id="writing">
-      <h2>Writing</h2>
-      <ul>
-        <li><a href="#ai-article">AI That Ships: A Pragmatic Guide to Value, Risk, and Governance</a> <span class="meta">· Original article (inspired by Kashyap Kompella)</span></li>
-        <li><a href="#">How I explain enterprise software to my non‑tech friends</a> <span class="meta">· Notes</span></li>
-        <li><a href="#">What actually moves the middle of a deal funnel</a> <span class="meta">· Essay</span></li>
-        <li><a href="#">On picking an industry:
+    <!-- Projects / Live -->
+    <section id="projects" class="fade">
+      <h2>Selected Project</h2>
+      <div class="card">
+        <h3>Kerala Ayurveda — Corporate Live Project</h3>
+        <p class="muted">Dec 2024 – Apr 2025 · 1st place among 25+ teams (149 students)</p>
+        <ul class="bullets">
+          <li>Conducted footfall analysis across outlets & mapped workflows for 20+ stores to flag bottlenecks.</li>
+          <li>Authored a PRD to streamline scheduling, resource allocation & appointment tracking.</li>
+        </ul>
+      </div>
+    </section>
 
-    <section id="contact">
+    <!-- Leadership -->
+    <section id="leadership" class="fade">
+      <h2>Positions of Responsibility</h2>
+      <div class="list">
+        <div class="card">
+          <h3>Academic Committee (BITSoM)</h3>
+          <p class="muted">2024 · Selected 1/6 from 158; led tech-led scheduling & conflict resolution.</p>
+        </div>
+        <div class="card">
+          <h3>Alumni Cell (SCMS)</h3>
+          <p class="muted">2019 · Organized alumni meet for 100+ attendees; end-to-end logistics.</p>
+        </div>
+        <div class="card">
+          <h3>Finance Club (SCMS)</h3>
+          <p class="muted">2019 · Led a team of 10; saved 70% of budget via ₹5L+ sponsorships.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade">
       <h2>Contact</h2>
-      <p>Best way to reach me is email. I’m also on <a href="https://www.linkedin.com/in/keshavagarwalcfa" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub</a>.</p>
-      <div class="btn-row">
-        <a class="btn primary" href="mailto:keshav_agarwal@kenan-flagler.unc.edu">Say hello</a>
-        <a class="btn" href="https://calendar.google.com/" target="_blank" rel="noopener">Book time</a>
+      <div class="card">
+        <p>
+          📧 <a href="mailto:snehakhowala1999@gmail.com">snehakhowala1999@gmail.com</a>
+          &nbsp;·&nbsp; ☎️ <a href="tel:+919030342050">+91 90303 42050</a>
+        </p>
+        <p class="muted">I’m happy to chat about cargo networks, airline commercial roles, and logistics strategy problems.</p>
       </div>
     </section>
-
-    <footer>
-      <p>© <span id="y"></span> Keshav Agarwal. All rights reserved. · <a href="/rss.xml">RSS</a></p>
-    </footer>
   </main>
 
+  <footer class="container">
+    <div>© <span id="year"></span> Sneha Khowala • Built with love & vanilla HTML/CSS/JS • <a href="#" id="toTop">Back to top ↑</a></div>
+  </footer>
+
   <script>
-    // Update year
-    document.getElementById('y').textContent = new Date().getFullYear();
+    // Theme persistence
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('themeBtn');
+    const preferred = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    if(preferred==='light'){ root.classList.add('light'); }
+    themeBtn.addEventListener('click', ()=>{
+      root.classList.toggle('light');
+      localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark');
+    });
+
+    // Save/Print
+    document.getElementById('printBtn').addEventListener('click', ()=>window.print());
+
+    // Copy email
+    document.getElementById('copyEmail').addEventListener('click', async ()=>{
+      try{ await navigator.clipboard.writeText('snehakhowala1999@gmail.com'); alert('Email copied!'); }catch(e){ alert('Copy failed'); }
+    });
+
+    // Web Share
+    document.getElementById('shareBtn').addEventListener('click', async ()=>{
+      const data = { title:'Sneha Khowala — Profile', text:'Check out Sneha’s profile', url: location.href };
+      if(navigator.share){ try{ await navigator.share(data);}catch(e){} } else { prompt('Copy this link', location.href); }
+    });
+
+    // Nav active state on scroll
+    const sections = [...document.querySelectorAll('main section')];
+    const links = [...document.querySelectorAll('header nav a')];
+    const onIntersect = entries => entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        links.forEach(l=>l.classList.remove('active'));
+        const active = document.querySelector(`header nav a[href='#${entry.target.id}']`);
+        if(active) active.classList.add('active');
+      }
+    });
+    const observer = new IntersectionObserver(onIntersect, {rootMargin:'-50% 0px -45% 0px'});
+    sections.forEach(s=>observer.observe(s));
+
+    // Fade in
+    const fades = document.querySelectorAll('.fade');
+    const fObs = new IntersectionObserver(e=>e.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add('show'); fObs.unobserve(x.target);} }), {threshold:.15});
+    fades.forEach(f=>fObs.observe(f));
+
+    // Stats counter
+    const counters = document.querySelectorAll('.stat .n');
+    const cObs = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting) return; cObs.unobserve(entry.target);
+        const el = entry.target; const end = parseFloat(el.dataset.count||'0');
+        const suffix = el.dataset.suffix||''; const plus = el.dataset.plus||'';
+        const start = 0; const dur = 900; const t0 = performance.now();
+        const fmt = v => suffix==='M' ? (Math.round(v*10)/10)+suffix : Math.round(v)+suffix;
+        const step = t=>{ const p = Math.min(1,(t-t0)/dur); el.textContent = plus+fmt(start + (end-start)*p); if(p<1) requestAnimationFrame(step); };
+        requestAnimationFrame(step);
+      });
+    }, {threshold:.7});
+    counters.forEach(c=>cObs.observe(c));
+
+    // Simple search & filter for experience
+    const search = document.getElementById('search');
+    const filters = document.querySelectorAll('.filter');
+    let activeFilter = 'all';
+    const cards = [...document.querySelectorAll('#xpList .xp')];
+
+    function applyFilter(){
+      const q = (search.value||'').toLowerCase();
+      cards.forEach(card=>{
+        const matchesTag = activeFilter==='all' || (card.dataset.tags||'').includes(activeFilter);
+        const matchesText = card.textContent.toLowerCase().includes(q);
+        card.style.display = matchesTag && matchesText ? '' : 'none';
+      });
+    }
+
+    search.addEventListener('input', applyFilter);
+    filters.forEach(f=>f.addEventListener('click', ()=>{
+      filters.forEach(x=>x.classList.remove('active')); f.classList.add('active');
+      activeFilter = f.dataset.filter; applyFilter();
+    }));
+
+    // Back to top
+    document.getElementById('toTop').addEventListener('click', (e)=>{ e.preventDefault(); scrollTo({top:0, behavior:'smooth'});});
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sneha Khowala",
+    "jobTitle": "Aviation & Logistics — Business Development & Operations",
+    "email": "mailto:snehakhowala1999@gmail.com",
+    "telephone": "+919030342050",
+    "alumniOf": [{"@type":"CollegeOrUniversity","name":"BITS School of Management"},{"@type":"CollegeOrUniversity","name":"Symbiosis Centre for Management Studies"}],
+    "address": {"@type":"PostalAddress","addressCountry":"IN"}
+  }
   </script>
 </body>
 </html>
